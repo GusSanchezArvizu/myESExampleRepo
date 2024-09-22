@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "app_scheduler.h": "c",
+        "systick.h": "c",
+        "app_tasks.h": "c"
+    }
+}

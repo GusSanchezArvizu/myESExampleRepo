@@ -1,0 +1,7 @@
+{
+    "C_Cpp.errorSquiggles": "disabled",
+    "files.associations": {
+        "app_tasks.h": "c",
+        "wdt.h": "c"
+    }
+}
