@@ -128,8 +128,10 @@ SECTIONS
     {
         . = ALIGN(8);
          _sheap = .;
+         _heap_mem_start = .;
         . = . + HEAP_SIZE;
         . = ALIGN(8);
+        _heap_mem_end = .;
         _eheap = .;
     } > ram
 
