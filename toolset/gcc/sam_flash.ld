@@ -128,12 +128,19 @@ SECTIONS
     {
         . = ALIGN(8);
          _sheap = .;
-         _heap_mem_start = .;
         . = . + HEAP_SIZE;
         . = ALIGN(8);
-        _heap_mem_end = .;
         _eheap = .;
     } > ram
+    
+    .my_heap (NOLOAD):
+	  {
+		  . = ALIGN(4);
+      _heap_mem_start = .;
+		  . = . + heap_memsize;
+      . = ALIGN(4);
+		  _heap_mem_end = .;
+	  } > heap_memalloc
 
     . = ALIGN(4);
     _end = . ;
