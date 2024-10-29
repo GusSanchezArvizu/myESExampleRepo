@@ -225,7 +225,7 @@ uint32_t Dac_SendData( DacDma *pDacd, DacCmd *pCommand)
 	if (_Dac_configureLinkList(pDacHw, pDacd->pXdmad, pCommand))
 		return DAC_ERROR_LOCK;
 
-	SCB_CleanDCache();
+	//SCB_CleanDCache();
 
 	/* Start DMA TX */
 	if (XDMAD_StartTransfer( pDacd->pXdmad, dacDmaTxChannel )) 

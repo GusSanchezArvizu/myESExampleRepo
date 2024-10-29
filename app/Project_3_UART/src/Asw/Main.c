@@ -33,39 +33,52 @@
 
 /*~~~~~~  Global variables ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-UartConfigType Config;
+/** UART'S Defiennation */
+#define PINS_UART0  \
+		{PIO_PA9A_URXD0 | PIO_PA10A_UTXD0, PIOA, ID_PIOA, PIO_PERIPH_A, PIO_DEFAULT}
+#define PINS_UART1 \
+		{PIO_PA5C_URXD1 | PIO_PA6C_UTXD1, PIOA, ID_PIOA, PIO_PERIPH_C, PIO_DEFAULT}
+#define PINS_UART2 \
+		{PIO_PD25C_URXD2 | PIO_PD26C_UTXD2, PIOD, ID_PIOD, PIO_PERIPH_C, PIO_DEFAULT}
+#define PINS_UART3 \
+		{PIO_PD28A_URXD3 | PIO_PD30A_UTXD3, PIOD, ID_PIOD, PIO_PERIPH_A, PIO_DEFAULT}
+#define PINS_UART4 \
+		{PIO_PD18C_URXD4 | PIO_PD19C_UTXD4, PIOD, ID_PIOD, PIO_PERIPH_C, PIO_DEFAULT}
+		
+const Pin pPins[] = { PINS_UART0, PINS_UART1, PINS_UART2, PINS_UART3, PINS_UART4 };
+
+
+static const Pin UARTPins[] = {PINS_UART0,PINS_UART4};
+
 /*~~~~~~  Local functions ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-void uartConfigurationInit()
+void TxNotification()
 {
-	//Config.UartNumberOfChannels = 2;
-	
-	//Config.UartChannel = (UartChannelType*)MemAlloc(sizeof(UartChannelType*) * (Config.UartNumberOfChannels));
-
-	Config.UartChannel[0].ClkSrc = 0;
-	Config.UartChannel[0].IsrEn = UART_CFG_INT_TXRDY;
-	Config.UartChannel[0].Mode = UART_MODE_NORMAL;
-	Config.UartChannel[0].Parity = UART_PARITY_ODD;
-	Config.UartChannel[0].Baudrate = 9200;
-
-	Config.UartChannel[1].ClkSrc = 0;
-	Config.UartChannel[1].IsrEn = UART_CFG_INT_TXRDY;
-	Config.UartChannel[1].Mode = UART_MODE_NORMAL;
-	Config.UartChannel[1].Parity = UART_PARITY_EVEN;
-	Config.UartChannel[1].Baudrate = 28800;
-
-	Config.UartChannel[2].ClkSrc = 0;
-	Config.UartChannel[2].IsrEn = UART_CFG_INT_TXRDY;
-	Config.UartChannel[2].Mode = UART_MODE_LOOPBACK;
-	Config.UartChannel[2].Parity = UART_CFG_PARITY_NO;
-	Config.UartChannel[2].Baudrate = 115200;
-
-	Config.UartChannel[3].ClkSrc = 0;
-	Config.UartChannel[3].IsrEn = UART_CFG_INT_TXRDY;
-	Config.UartChannel[3].Mode = UART_MODE_LOOPBACK;
-	Config.UartChannel[3].Parity = UART_PARITY_EVEN;
-	Config.UartChannel[3].Baudrate = 19200;
-
+	printf("Uart: Ready to text\n");
 }
+
+void RxNotification()
+{
+	printf("Uart: Ready to read\n");
+}
+
+void ErrorNotification(UartErrorType Error)
+{
+	switch (Error)
+	{
+		case UART_ERROR_OVERRUN:
+			printf("Uart Error Overrun\n");
+			break;
+		case UART_ERROR_FRAMING:
+			printf("Uart Error Framing\n");
+			break;
+		case UART_ERROR_PARITY:
+			printf("Uart Error Parity\n");
+			break;
+		default:
+			printf("error: this ain't it, chief\n");
+	}
+}
+
 /*----------------------------------------------------------------------------
  *        Exported functions
  *----------------------------------------------------------------------------*/
@@ -93,9 +106,15 @@ extern int main( void )
   
     /* Uart Inititalization */
     printf( "-- Uart Initialization --\n\r" ) ;
-	uartConfigurationInit();
-    Uart_Init(&UartConfiguredChannels[0]);
 
+	PIO_Configure(pPins, PIO_LISTSIZE(pPins));
+	Uart_Init(&UartConfig[0]);
+
+	Uart_SetBaudrate(UART_CFG_CHANNEL0, 9600);
+	Uart_SetBaudrate(UART_CFG_CHANNEL1, 14400);
+	Uart_SetBaudrate(UART_CFG_CHANNEL2, 38400);
+	Uart_SetBaudrate(UART_CFG_CHANNEL3, 57600);
+	Uart_SetBaudrate(UART_CFG_CHANNEL4, 9600);
   
 	/* Scheduler Inititalization */
 	printf( "-- Scheduler Initialization --\n\r" ) ;

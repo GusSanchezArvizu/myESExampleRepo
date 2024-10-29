@@ -27,35 +27,35 @@
 /* EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.                           */
 /* ---------------------------------------------------------------------------- */
 
-INPUT (Y:\Win_Comun\Iteso\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\system_sam.o 
-Y:\Win_Comun\Iteso\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\syscalls.o 
-Y:\Win_Comun\Iteso\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\startup_sam.o 
-Y:\Win_Comun\Iteso\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\dbg_console.o 
-Y:\Win_Comun\Iteso\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\board_lowlevel.o 
-Y:\Win_Comun\Iteso\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\board_memories.o 
-Y:\Win_Comun\Iteso\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\led.o 
-Y:\Win_Comun\Iteso\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\wdt.o 
-Y:\Win_Comun\Iteso\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\pmc.o 
-Y:\Win_Comun\Iteso\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\pio.o 
-Y:\Win_Comun\Iteso\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\pio_it.o 
-Y:\Win_Comun\Iteso\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\supc.o 
-Y:\Win_Comun\Iteso\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\exceptions.o 
-Y:\Win_Comun\Iteso\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\mpu.o 
-Y:\Win_Comun\Iteso\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\xdmad.o 
-Y:\Win_Comun\Iteso\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\xdma_hardware_interface.o 
-Y:\Win_Comun\Iteso\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\xdmac.o 
-Y:\Win_Comun\Iteso\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\dac_dma.o 
-Y:\Win_Comun\Iteso\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\Main.o 
-Y:\Win_Comun\Iteso\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\Led_Ctrl.o 
-Y:\Win_Comun\Iteso\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\Button_Ctrl.o 
-Y:\Win_Comun\Iteso\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\SchM_Tasks.o 
-Y:\Win_Comun\Iteso\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\dac.o 
-Y:\Win_Comun\Iteso\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\ecg_data.o 
-Y:\Win_Comun\Iteso\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\Wdg.o 
-Y:\Win_Comun\Iteso\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\SchM_Cfg.o 
-Y:\Win_Comun\Iteso\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\Fpu.o 
-Y:\Win_Comun\Iteso\SAMV71x\app\11_DacDma\src\Objects\MemAlloc.o 
-Y:\Win_Comun\Iteso\SAMV71x\app\11_DacDma\src\Objects\SchM.o)
+INPUT (C:\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\system_sam.o 
+C:\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\syscalls.o 
+C:\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\startup_sam.o 
+C:\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\dbg_console.o 
+C:\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\board_lowlevel.o 
+C:\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\board_memories.o 
+C:\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\led.o 
+C:\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\wdt.o 
+C:\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\pmc.o 
+C:\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\pio.o 
+C:\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\pio_it.o 
+C:\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\supc.o 
+C:\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\exceptions.o 
+C:\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\mpu.o 
+C:\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\Main.o 
+C:\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\Led_Ctrl.o 
+C:\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\Button_Ctrl.o 
+C:\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\SchM_Tasks.o 
+C:\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\Wdg.o 
+C:\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\SchM_Cfg.o 
+C:\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\Fpu.o 
+C:\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\dac.o 
+C:\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\dac_dma.o 
+C:\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\ecg_data.o 
+C:\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\xdma_hardware_interface.o 
+C:\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\xdmac.o 
+C:\SAMV71x\app\11_DacDma\SAMV71_Xplained_Ultra\Debug\xdmad.o 
+C:\SAMV71x\app\11_DacDma\src\Objects\MemAlloc.o 
+C:\SAMV71x\app\11_DacDma\src\Objects\SchM.o)
 
 /*------------------------------------------------------------------------------
  *      Linker script for running in internal FLASH on the ATSAMV71Q21
@@ -68,9 +68,10 @@ SEARCH_DIR(.)
 /* Memory Spaces Definitions */
 MEMORY
 {
-  rom (rx)  : ORIGIN = 0x00400000, LENGTH = 0x00200000
-  ram (rwx) : ORIGIN = 0x20400000, LENGTH = 0x00060000
-  sdram(rwx): ORIGIN = 0x70000000, LENGTH = 0x00200000
+  rom (rx)           : ORIGIN = 0x00400000, LENGTH = 0x00200000
+  heap_memalloc(rwx) : ORIGIN = 0x20400000, LENGTH = 0x00010000
+  ram (rwx)          : ORIGIN = 0x20410000, LENGTH = 0x00050000
+  sdram(rwx)         : ORIGIN = 0x70000000, LENGTH = 0x00200000
 }
 
 /* The stack size used by the application. NOTE: you need to adjust according to your application. */
@@ -78,6 +79,8 @@ STACK_SIZE = DEFINED(STACK_SIZE) ? STACK_SIZE : 0x2000;
 
 /* The heapsize used by the application. NOTE: you need to adjust according to your application. */
 HEAP_SIZE = DEFINED(HEAP_SIZE) ? HEAP_SIZE : 0x1000;
+
+heap_memsize = DEFINED(heap_memsize) ? heap_memsize : 0x2000;
 
 INCLUDE ..\..\..\toolset\gcc\sam_flash.ld
 INCLUDE ..\..\..\toolset\gcc\sam_sdram.ld

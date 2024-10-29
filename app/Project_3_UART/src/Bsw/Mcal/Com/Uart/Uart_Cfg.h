@@ -12,7 +12,7 @@
 #define _UART_CFG_H
 
   #include "Std_Types.h"
-
+  #include "Uart_Types.h"
 /* configure number of channels*/
   #define UART_CFG_CHANNELS (4)
 /* configure id of channel*/
@@ -21,7 +21,6 @@
   #define UART_CFG_CHANNEL2  (2)
   #define UART_CFG_CHANNEL3  (3)
   #define UART_CFG_CHANNEL4  (4)
-
  /* interrupt configuration */
   #define UART_INT_DISABLED 0
   #define UART_INT_RXRDY 1
@@ -45,6 +44,17 @@
   #define UART_PMC_CLK 1
 
   extern const uint8_t UartConfiguredChannels[];
+
+  typedef struct
+  {
+    uint8_t UartNumberOfChannels;
+    uint8_t ClkSrc;
+    UartChannelType* UartChannel;
+  }UartConfigType;
+
+	extern const UartChannelType UartCh[];
+	extern UartConfigType UartConfig[];
+
 
 
 #endif /* _UART_CFG_H */

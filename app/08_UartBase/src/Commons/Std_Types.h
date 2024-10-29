@@ -39,6 +39,8 @@
 		#define E_NOT_OK (Std_ReturnType)0x01
 	#endif
 
+
+
 	#define STD_HIGH    0x01 /* Physical state 5V or 3.3V */
 	#define STD_LOW     0x00 /* Physical state 0V */
 	#define STD_ACTIVE  0x01 /* Logical state active */
