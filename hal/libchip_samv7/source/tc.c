@@ -146,6 +146,23 @@ extern void TC_Stop(Tc *pTc, uint32_t dwChannel )
 }
 
 /**
+ * @brief Interrupt Enable TC Channel
+ * 
+ * @param pTc Pointer to a TC instance 
+ * @param dwChannel Channel number
+ */
+void TC_Interrupt_Enable(Tc *pTc, uint32_t dwChannel)
+{
+  	TcChannel* pTcCh ;
+
+	assert( dwChannel < (sizeof( pTc->TC_CHANNEL )/sizeof( pTc->TC_CHANNEL[0] )) ) ;
+	pTcCh = pTc->TC_CHANNEL+dwChannel ;
+
+	/*  Disable interrupts */
+	pTcCh->TC_IER = 0xFFFFFFFF ;
+}
+
+/**
  * \brief Find best MCK divisor
  *
  * Finds the best MCK divisor given the timer frequency and MCK. The result
