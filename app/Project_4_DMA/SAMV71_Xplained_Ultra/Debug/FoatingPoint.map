@@ -10588,7 +10588,6 @@ LOAD C:\SAMV71x\app\Project_4_DMA\src\Objects\SchM.o
                 0x00400714                TC6_Handler
                 0x00400714                WDT_Handler
                 0x00400714                TC4_Handler
-                0x00400714                TC1_Handler
                 0x00400714                HSMCI_Handler
                 0x00400714                UART1_Handler
                 0x00400714                DACC_Handler
@@ -10624,6 +10623,7 @@ LOAD C:\SAMV71x\app\Project_4_DMA\src\Objects\SchM.o
                 0x00400714                MCAN1_Line1_Handler
                 0x00400714                FPU_Handler
                 0x00400714                RSTC_Handler
+                0x00400714                TC0_Handler
                 0x00400714                MCAN0_Line1_Handler
                 0x00400714                TC5_Handler
                 0x00400714                AES_Handler
@@ -10718,7 +10718,7 @@ LOAD C:\SAMV71x\app\Project_4_DMA\src\Objects\SchM.o
                 0x00402438                TC_Interrupt_Enable
                 0x00402478                TC_FindMckDivisor
  .text          0x00402528      0x340 C:\SAMV71x\app\Project_4_DMA\SAMV71_Xplained_Ultra\Debug\Main.o
-                0x004025e0                TC0_Handler
+                0x004025e0                TC1_Handler
                 0x004025f0                main
  .text          0x00402868       0xc8 C:\SAMV71x\app\Project_4_DMA\SAMV71_Xplained_Ultra\Debug\Led_Ctrl.o
                 0x00402868                LedCtrl_Configure
