@@ -158,7 +158,7 @@ void TC_Interrupt_Enable(Tc *pTc, uint32_t dwChannel)
 	assert( dwChannel < (sizeof( pTc->TC_CHANNEL )/sizeof( pTc->TC_CHANNEL[0] )) ) ;
 	pTcCh = pTc->TC_CHANNEL+dwChannel ;
 
-	/*  Disable interrupts */
+	/*  Enable interrupts */
 	pTcCh->TC_IER = 0xFFFFFFFF ;
 }
 
